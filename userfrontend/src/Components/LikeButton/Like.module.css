@@ -1,0 +1,79 @@
+.modal {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%; /* Increased width */
+    background-color:transparent; /* Semi-transparent black background */
+    z-index: 1000; /* Ensure modal is on top of other content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modalContent {
+    background-color: red; 
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid white;
+    width: 100%; 
+    max-width: 600px; 
+    max-height: 80vh;
+    overflow-y: auto;
+    animation: slideIn 0.3s ease-in-out, fadeIn 0.3s ease-in-out; 
+  }
+  
+  .close {
+    color: rgb(238, 209, 209);
+    float: right;
+    font-size: 28px;
+    font-weight: bolder;
+    cursor: pointer;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: white; /* Red color on hover/focus */
+  }
+  
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateY(50%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .modalContent h2 {
+    color: white; /* Dark red text color for header */
+    margin-bottom: 10px;
+    font-weight: bolder;
+    font-size: medium;
+  }
+  
+  .modalContent ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .modalContent ul li {
+    margin-bottom: 10px;
+    font-size: medium;
+    font-weight: bolder;
+    color:red; /* Dark text color */
+    background-color: white; /* Light pink background color */
+    padding: 10px;
+    border-radius: 4px;
+  }

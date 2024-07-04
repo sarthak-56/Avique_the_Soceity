@@ -1,0 +1,41 @@
+.container {
+  max-width: 400px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 10vh auto 0; /* Top margin of 4vh, auto for horizontal centering */
+}
+
+
+.logo {
+  margin-bottom: 20px;
+  display: inline-block; /* Ensure the logo is displayed as a block element */
+}
+
+.logo img {
+  max-width: 100px;
+  height: auto;
+}
+
+h4 {
+  font-size: 16px;
+  padding: 1vw;
+  margin-bottom: 20px;
+  color: black;
+  font-weight: bolder;
+}
+
+a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: red;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+a:hover {
+  background-color: darkred; /* Optional: use a different shade of red for hover effect */
+}

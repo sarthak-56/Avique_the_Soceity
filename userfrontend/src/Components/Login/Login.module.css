@@ -1,0 +1,83 @@
+/* YourModule.module.css */
+
+.auth-container {
+    max-width: 400px;
+    margin: 10vh auto 0; /* Top margin of 10vh, center horizontally */
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px red;
+  }
+  
+  .auth-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .auth-form h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: red;  
+    text-align: center;
+    font-weight: bolder;
+  }
+  
+  .auth-form input[type="email"],
+  .auth-form input[type="password"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 5px double white;
+    background-color: red; /* Red color for input background */
+    border-radius: 15px;
+    font-size: 16px;
+    color: white;
+    font-size: larger;
+    font-weight: bolder;
+  }
+  
+  .auth-form input[type="email"]:focus,
+  .auth-form input[type="password"]:focus {
+    border: none;
+  }
+  
+  .auth-form button {
+    padding: 10px 20px;
+    background-color: red;  
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    font-weight: bold;
+  }
+  
+  .auth-form button:hover {
+    background-color: red;  
+    color: white;
+    font-weight: bolder;
+  }
+  
+  .auth-form .alert {
+    color: red; /* Red color for alert text */
+    margin-top: 10px;
+  }
+  
+  .auth-form p {
+    color:red; /* Red color for paragraph text */
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: large;
+    transition: color 0.3s;  
+    margin-top: 2vh;
+    text-align: center;
+  }
+  
+  .auth-form p:hover {
+    color: white;
+    background-color: red;  
+    box-shadow: inset;
+  }
+  

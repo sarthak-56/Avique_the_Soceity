@@ -1,0 +1,145 @@
+.container {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 9999; /* Ensure it's above other content */
+}
+
+.searchContainer {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.searchInput {
+  flex: 1; /* Take up remaining space */
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.searchButton {
+  padding: 10px 20px;
+  background-color: red;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border 0.3s, box-shadow 0.3s; /* Add a smooth transition effect */
+}
+
+.searchButton:hover {
+  background-color: white; /* Change background color on hover */
+  color: red; /* Change text color on hover */
+  border: 1px solid red; /* Add a red border on hover */
+  box-shadow: 0 0 5px red; /* Add a red shadow on hover */
+}
+
+.message {
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.error {
+  background-color: #ffcccc;
+  color: #fc0707;
+  font-weight: bolder;
+  animation: errorAnimation 1s ease-in-out infinite alternate; /* Apply animation */
+}
+
+.success {
+  background-color: #ccffcc;
+  color: #0bf80b;
+  font-weight: bolder;
+  animation: successAnimation 1s ease-in-out infinite alternate; /* Apply animation */
+}
+
+.userList {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Update the styles for the user item */
+.userItem {
+  display: flex; /* Align items in a row */
+  justify-content: space-between; /* Align items with space between them */
+  align-items: center; /* Center items vertically */
+  padding: 10px; /* Add padding around each user item */
+  transition: background-color 0.3s; /* Add a smooth transition effect */
+}
+
+.userItem:hover {
+  background-color: #ffefef; /* Change background color on hover */
+}
+
+.userInfo {
+  display: flex; /* Align items in a row */
+  align-items: center; /* Center items vertically */
+}
+
+.profilePicture {
+  width: 50px; /* Set the width of the profile picture */
+  height: 50px; /* Set the height of the profile picture */
+  border-radius: 50%; /* Make the profile picture round */
+  margin-right: 10px; /* Add some space between the picture and the name */
+}
+
+.sendRequestButton {
+  white-space: nowrap;
+  background-color: white;
+  color: red;
+  padding: 1vh;
+  border-radius: 5px;
+  border: none;
+  transition: background-color 0.3s, color 0.3s, border 0.3s, box-shadow 0.3s; /* Add a smooth transition effect */
+}
+
+.sendRequestButton:hover {
+  background-color: red; /* Change background color on hover */
+  color: white; /* Change text color on hover */
+  border: 1px solid red; /* Add a red border on hover */
+  box-shadow: 0 0 15px red; /* Add a red shadow on hover */
+  animation: buttonHoverAnimation 0.5s ease-in-out; /* Apply animation */
+}
+
+@keyframes errorAnimation {
+  0% {
+    background-color: #ffcccc;
+    color: #fc0707;
+  }
+  100% {
+    background-color: #fc0707;
+    color: #ffcccc;
+  }
+}
+
+@keyframes successAnimation {
+  0% {
+    background-color: #ccffcc;
+    color: #0bf80b;
+  }
+  100% {
+    background-color: #0bf80b;
+    color: #ccffcc;
+  }
+}
+
+@keyframes buttonHoverAnimation {
+  0% {
+    background-color: red;
+    color: white;
+  }
+  50% {
+    background-color: white;
+    color: red;
+  }
+  100% {
+    background-color: red;
+    color: white;
+  }
+}

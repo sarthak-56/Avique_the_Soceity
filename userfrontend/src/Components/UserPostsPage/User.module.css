@@ -1,0 +1,109 @@
+.feed {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  display: grid;
+  grid-template-rows: 1fr;
+  padding: 20px;
+  background-color: transparent;
+  max-height: 100vh;
+  box-sizing: border-box;
+  overflow-y: auto;
+  justify-items: center; /* Center items horizontally */
+  align-items: start; /* Align items to the top */
+}
+
+.feed::-webkit-scrollbar {
+  display: none;
+}
+
+.loading, .error, .no-posts {
+  text-align: center;
+  color: red;
+  font-size: 18px;
+}
+
+.post {
+  background-color: transparent;
+  border: 1px solid red;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 20px;
+  width: 100%;
+  max-width: 600px;
+  box-sizing: border-box;
+}
+
+.post-image {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.user {
+  margin-top: 10px;
+}
+
+.user h2 {
+  color: red;
+  font-weight: bolder;
+}
+
+.user-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: red;
+}
+
+.post-content {
+  font-size: 16px;
+  color: #333333;
+  margin-top: 5px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 3px;
+  margin-top: 10px;
+  border: 1px solid red;
+  padding: 10px;
+}
+
+.button-group-left, .button-group-right {
+  display: flex;
+  gap: 10px;
+}
+
+.button-group-right {
+  margin-left: auto;
+}
+
+.like-button, .comment-button, .share-button, .save-button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+.like-button {
+  background-color: #6495ed;
+}
+
+.comment-button {
+  background-color: #20b2aa;
+}
+
+.share-button {
+  background-color: #ffa500;
+}
+
+.save-button {
+  background-color: #7cfc00;
+}
+
+.like-count {
+  margin-top: 5px;
+  color: red;
+  font-size: larger;
+}
+

@@ -1,0 +1,135 @@
+/* FeedPage.module.css */
+
+/* Add this style to hide the scrollbar */
+.feed {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+.feed::-webkit-scrollbar {
+    display: none; /* WebKit */
+}
+
+.loading {
+    text-align: center;
+    color: red;
+    font-size: 18px;
+}
+
+.error {
+    text-align: center;
+    color: red;
+    font-size: 18px;
+}
+
+.feed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: transparent;
+    max-height: 100vh; /* Use 100vh instead of screen */
+    box-sizing: border-box;
+    overflow-y: auto; 
+    margin-top: 0; /* Set top margin to 0 */
+}
+
+.post {
+    background-color: transparent;
+    border: 1px solid red;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+}
+
+.post-image {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.user {
+    margin-top: 10px;
+}
+
+.user-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+}
+
+.post-content {
+    font-size: 16px;
+    color: #333333;
+    margin-top: 5px;
+}
+
+.no-posts {
+    text-align: center;
+    color: red;
+    font-size: 18px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;  
+    gap: 3px;
+    margin-top: 10px;
+    border: 1px solid red;
+    padding: 10px;
+}
+
+.button-group-left {
+    display: flex;
+    gap: 10px;  
+}
+
+.button-group-right {
+    display: flex;
+    gap: 10px;  
+    margin-left: auto; 
+}
+
+.like-button {
+    background-color: #6495ed;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.like-count {
+    margin-top: 5px; /* Adjust margin as needed */
+    color: red;  
+    font-size: larger; 
+}
+
+.comment-button {
+    background-color: #20b2aa;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.share-button {
+    background-color: #ffa500;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.save-button {
+    background-color: #7cfc00;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

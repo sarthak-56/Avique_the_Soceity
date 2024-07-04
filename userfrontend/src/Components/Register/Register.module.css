@@ -1,0 +1,118 @@
+/* YourModule.module.css */
+
+.authContainer {
+  max-width: 400px;
+  margin: 10vh auto 0; /* Top margin of 10vh, center horizontally */
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgb(235, 7, 7);
+}
+
+.authForm {
+  display: flex;
+  flex-direction: column;
+}
+
+h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: red;
+  text-align: center;
+  font-weight: bolder;
+  border-bottom: 5px solid red;
+}
+
+.input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 5px double white;
+  background-color: red;
+  border-radius: 15px;
+  font-size: 16px;
+  color: white;
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.input:focus {
+  border: none;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: medium;
+  font-weight: bolder;
+}
+
+.checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid red;
+  border-radius: 3px;
+  outline: none;
+  vertical-align: middle;
+  position: relative;
+  cursor: pointer;
+}
+
+.checkbox:checked::before {
+  content: '\2713'; /* Checkmark icon */
+  display: block;
+  width: 16px;
+  height: 16px;
+  text-align: center;
+  line-height: 16px;
+  font-size: 12px;
+  font-weight: bolder;
+  color: red; /* Red color for checkmark */
+  position: absolute;
+  top: -2px;
+  left: -2px;
+}
+
+.checkboxText {
+  color: red; /* Red color for text */
+}
+
+
+.button {
+  padding: 10px 20px;
+  background-color:white;  
+  color: red;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  font-weight: bold;
+}
+
+.button:hover {
+  background-color: red;  
+  color: white;
+  font-weight: bolder;
+}
+
+.link {
+  color: red; 
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: large;
+  transition: color 0.3s;  
+  margin-top: 2vh;
+  text-align: center;
+}
+
+.link:hover {
+  background-color: red;  
+  color: white;
+  box-shadow: inset;
+}

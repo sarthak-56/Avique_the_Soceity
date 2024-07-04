@@ -1,0 +1,15 @@
+asgiref==3.5.0
+channels==4.1.0
+Django==4.0.3
+django-cors-headers==3.11.0
+django-dotenv==1.4.2
+djangorestframework==3.13.1
+djangorestframework-simplejwt==5.1.0
+pillow==10.3.0
+psycopg2==2.9.9
+PyJWT==2.3.0
+python-dotenv==1.0.1
+pytz==2021.3
+setuptools==70.0.0
+sqlparse==0.4.2
+tzdata==2021.5

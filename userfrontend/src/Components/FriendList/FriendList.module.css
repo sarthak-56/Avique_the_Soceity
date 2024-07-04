@@ -1,0 +1,198 @@
+body {
+    padding: 20px;
+    background-color: #f4f4f9;
+    font-family: Arial, sans-serif;
+}
+
+.section-title {
+    text-align: center;
+    color: red;
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 3px solid #ff4757;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.friends {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 0;
+}
+
+.friends li {
+    cursor: pointer;
+    width: 250px;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.friends li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.friends li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px;
+    display: block;
+}
+
+.friends li a:hover {
+    color: #ff4757;
+    background-color: #f1f1f1;
+}
+
+.profile-details {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.profile-details h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.profile-details p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Modal styles */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    position: relative;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    color: #ff4757;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-header h1 {
+    font-size: 32px;
+    color: #333;
+    
+}
+
+.cover-picture1 {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.profile-picture1 {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 190px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 6px solid #fff;
+}
+
+.profile-details p {
+    text-align: center;
+    color: red;
+    font-size: medium;
+    font-weight: bold;
+    line-height: 1.6;
+}
+
+.profile-details{
+    margin-top: 60px;
+}
+.profile-header h1{
+    color: red;
+    font-size: larger;
+    font-weight: bolder;
+}
+/* Keyframes for modal animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.modal-open {
+    animation: fadeIn 0.3s forwards;
+}
+
+@media (max-width: 768px) {
+    .profile-picture1 {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        position: absolute;
+        top: 150px;
+        left: 50%;
+        transform: translateX(-50%);
+        border: 6px solid #fff;
+    }
+  }
